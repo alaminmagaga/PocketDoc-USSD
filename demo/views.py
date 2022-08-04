@@ -31,7 +31,7 @@ def index(request):
             response +="2.Igbo\n"
             response +="3.Yoruba\n"
             response +="4.back\n"
-        elif text=="2:
+        elif text=="2":
             response="CON Select Your State\n"
             response+="1.kaduna\n"
             response+="2.kano\n"
