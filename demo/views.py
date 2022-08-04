@@ -17,15 +17,24 @@ def index(request):
         if text == "":
             response = "CON Welcome to Mexpert \n"
             # response .= "1. My Account \n"
-            response += "1.Lanaguage\n"
+            response += "1.Language\n"
             response+="2.Storage Facility\n"
             response+="3.Climate-Smart Agriculture\n"
             response+="4.Support\n"
+         
 
 
 
         elif text == "1":
             response = "CON Select your preferred language\n"
-
+            response +="1.Hausa\n"
+            response +="2.Igbo\n"
+            response +="3.Yoruba\n"
+            response +="4.back\n"
+        elif text=="2:
+            response="CON Select Your State\n"
+            response+="1.kaduna\n"
+            response+="2.kano\n"
+            response+="3.katsina\n"
         return HttpResponse(response)
 
