@@ -26,15 +26,26 @@ def index(request):
 
 
         elif text == "1":
-            response = "CON Select your preferred language\n"
+            response = "CON Zaɓi harshen da kuka fi so\n"
             response +="1.Hausa\n"
             response +="2.Igbo\n"
             response +="3.Yoruba\n"
-            response +="4.back\n"
+            response +="4.baya\n"
         elif text=="2":
-            response="CON Select Your State\n"
+            response="CON Zaɓi Jihar ku\n"
             response+="1.kaduna\n"
             response+="2.kano\n"
             response+="3.katsina\n"
+            response +="4.baya\n"
+        elif text=="2*1":
+            response="CON Zaɓi Karamar hukuma \n"
+            response+="1.Lere\n"
+            response+="2.Zarian"
+            response+="3.Kafancan\n"
+            response +="4.gaba\n"
+        elif text=="2*1"*1:
+            response="END Zamu hadaka da wakilin mu nanda minti 30,Mun gode \n"
+           
+            
         return HttpResponse(response)
 
