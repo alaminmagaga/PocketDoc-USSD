@@ -18,7 +18,7 @@ def index(request):
             response = "CON Welcome to Mexpert \n"
             # response .= "1. My Account \n"
             response += "1.Lanaguage\n"
-            response+="2.Storage Facility\"
+            response+="2.Storage Facility\n"
             response+="3.Climate-Smart Agriculture\n"
             response+="4.Support\n"
 
