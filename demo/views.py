@@ -15,13 +15,17 @@ def index(request):
         response = ""
 
         if text == "":
-            response = "CON Welcome to PocketDoc \n"
+            response = "CON Welcome to Mexpert \n"
             # response .= "1. My Account \n"
-            response += "1. My Phone Number"
+            response += "1.Lanaguage\n"
+            response+="2.Storage Facility\"
+            response+="3.Climate-Smart Agriculture\n"
+            response+="4.Support\n"
+
 
 
         elif text == "1":
-            response = "END My Phone number is {0} Tolu".format(phone_number)
+            response = "CON Select your preferred language\n"
 
         return HttpResponse(response)
 
