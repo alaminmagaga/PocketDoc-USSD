@@ -40,10 +40,10 @@ def index(request):
         elif text=="2*1":
             response="CON Zaɓi Karamar hukuma \n"
             response+="1.Lere\n"
-            response+="2.Zarian"
+            response+="2.Zaria\n"
             response+="3.Kafancan\n"
             response +="4.gaba\n"
-        elif text=="2*1"*1:
+        elif text=="2*1*1":
             response="END muna taya murna Zamu hadaka da wakilin mu nanda minti 30,Mun gode \n"
            
             
