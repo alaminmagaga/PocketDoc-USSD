@@ -15,12 +15,12 @@ def index(request):
         response = ""
 
         if text == "":
-            response = "CON Welcome to Mexpert \n"
-            # response .= "1. My Account \n"
-            response += "1.Language\n"
-            response+="2.Storage Facility\n"
-            response+="3.Climate-Smart Agriculture\n"
-            response+="4.Support\n"
+            response = "CON Barka da zuwa  Mexpert \n"
+            # response .= "1.My Account \n"
+            response += "1.Harshe\n"
+            response+="2.Wurin ajiya\n"
+            response+="3.Yanayi- Noma Mai Wayo\n"
+            response+="4.Taimako\n"
          
 
 
@@ -44,7 +44,7 @@ def index(request):
             response+="3.Kafancan\n"
             response +="4.gaba\n"
         elif text=="2*1"*1:
-            response="END Zamu hadaka da wakilin mu nanda minti 30,Mun gode \n"
+            response="END muna taya murna Zamu hadaka da wakilin mu nanda minti 30,Mun gode \n"
            
             
         return HttpResponse(response)
