@@ -15,11 +15,11 @@ def index(request):
         response = ""
 
         if text == "":
-            response = "CON Barka da zuwa  Mexpert \n"
+            response = "CON Barka da zuwa Electracker \n"
             # response .= "1.My Account \n"
             response += "1.Harshe\n"
-            response+="2.Wurin ajiya\n"
-            response+="3.Yanayi- Noma Mai Wayo\n"
+            response+="2.Ilimin sabe\n"
+            response+="3.Ke kara\n"
             response+="4.Taimako\n"
          
 
