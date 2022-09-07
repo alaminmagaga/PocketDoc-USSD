@@ -15,37 +15,51 @@ def index(request):
         response = ""
 
         if text == "":
-            response = "CON Barka da zuwa Electracker \n"
-            # response .= "1.My Account \n"
-            response += "1.Harshe\n"
-            response+="2.Ilimin sabe\n"
-            response+="3.Ke kara\n"
-            response+="4.Taimako\n"
-         
-
-
+            response = "CON CON Welcome to Sports News subscription service  \n"
+            response += "1. Football \n"
+            response += "2. Tennis\n"
+            response += "3. Volley Ball \n"
+            response += "4. Rugby \n"
 
         elif text == "1":
-            response = "CON Zaɓi harshen da kuka fi so\n"
-            response +="1.Hausa\n"
-            response +="2.Igbo\n"
-            response +="3.Yoruba\n"
-            response +="4.baya\n"
+            response = "CON Select Your Preferred football Plans \n"
+            response += "1. Daily @ N100 \n"
+            response += "2. Weekly @ N50 \n"
+            response += "3. Monthly @ N25 "
+
         elif text=="2":
-            response="CON Zaɓi Jihar ku\n"
-            response+="1.kaduna\n"
-            response+="2.kano\n"
-            response+="3.katsina\n"
-            response +="4.baya\n"
-        elif text=="2*1":
-            response="CON Zaɓi Karamar hukuma \n"
-            response+="1.Lere\n"
-            response+="2.Zaria\n"
-            response+="3.Kafancan\n"
-            response +="4.gaba\n"
-        elif text=="2*1*1":
-            response="END muna taya murna Zamu hadaka da wakilin mu nanda minti 30,Mun gode \n"
-           
-            
+            response = "CON You will be charged N100 for your Daily Football news \n"
+            response += "1. Auto-Renewal \n"
+            response += "2. One-off Purchase \n"
+
+        elif text == "1*1*1":   
+            response = "END thank you for subscribing to our daily football news plan \n"
+
+        elif text == "1*1*2":     #one off
+            response = "END thank you for your one-off daily football news plan \n"  
+  
+        elif text == "1*2":      #weekly football
+            response = "CON You will be charged N50 for our weekly Sports news plan \n"
+            response += "1. Auto-Renew \n"
+            response += "2. One-off Purchase \n"
+
+        elif text == "1*2*1":
+            response = "END thank you for subscribing to our weekly football news plan \n"
+
+        elif text == "1*2*2":
+            response = "END thank you for your one-off weekly football news plan \n"    
+    
+        elif text == "1*3":
+            response = "CON You will be charged N25 for our monthly football news plan \n"
+            response += "1. Auto-Renew \n"
+            response += "2. One-off Purchase \n"
+         
+        elif text == "1*3*1":
+            response = "END thank you for subscribing to our monthly football news plan \n"
+    
+        elif text == "1*3*2":
+            response = "END thank you for your one-off monthly football news plan \n"
+
+
         return HttpResponse(response)
 
